@@ -33,9 +33,9 @@ const BottonNavigation: React.FC = () => {
 
   function handleClickOpenMenu(event: React.MouseEvent<HTMLElement>) {
     if (event.currentTarget.id === 'openLeft') {
-      setAnchorElMenuLeft(event.currentTarget)
+      openMenuLeft ? closeMenuLeft() : setAnchorElMenuLeft(event.currentTarget)
     } else {
-      setAnchorElMenuRight(event.currentTarget)
+      openMenuRight ? closeMenuRight() : setAnchorElMenuRight(event.currentTarget)
     }
   }
 

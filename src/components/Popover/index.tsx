@@ -1,13 +1,5 @@
-import React, {
-  useEffect,
-  useRef,
-  useContext,
-  useState,
-  HTMLAttributes
-} from 'react'
+import React, { useEffect, useRef, useState, HTMLAttributes } from 'react'
 import type { ReactNode } from 'react'
-import { ThemeContext } from '../../contexts/ThemeContext'
-import * as S from './style'
 
 interface PopoverProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
@@ -37,7 +29,6 @@ const Popover: React.FC<PopoverProps> = ({
 }) => {
   const containerRef = useRef<HTMLElement | null>(null)
   const myElementRef = useRef<HTMLDivElement>(null)
-  const themeContext = useContext(ThemeContext)
   const [bottom, setBottom] = useState<number>(0)
   const [right, setRight] = useState<number>(0)
   const [left, setLeft] = useState<number>(0)
@@ -75,21 +66,24 @@ const Popover: React.FC<PopoverProps> = ({
     return () => {
       document.removeEventListener('click', handleClick)
     }
-  }, [anchorEl, open, onClose, myElementRef.current])
+  }, [anchorEl, open, onClose])
 
   return (
-    <S.Container
+    <div
       ref={myElementRef}
-      theme={themeContext}
-      open={open}
-      sx={
+      className={
+        open
+          ? `flex flex-col p-4 z-10 absolute bg-slate-50 dark:bg-gray-700 text-slate-900 dark:text-gray-50 rounded shadow-sm drop-shadow animate-scale-in-center-open`
+          : 'hidden invisible'
+      }
+      style={
         anchorOrigin.horizontal === 'left'
-          ? { bottom: bottom, left: left }
-          : { bottom: bottom, right: right }
+          ? { bottom: `${bottom}px`, left: `${left}px`, right: 'auto' }
+          : { bottom: `${bottom}px`, left: 'auto', right: `${right}px` }
       }
     >
       {children}
-    </S.Container>
+    </div>
   )
 }
 

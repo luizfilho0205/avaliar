@@ -52,7 +52,7 @@ const BottonNavigation: React.FC = () => {
   }
 
   return (
-    <div className="w-full h-[64px] absolute right-0 bottom-0 left-0 bg-slate-300 dark:bg-gray-700">
+    <div className="w-full h-[64px] absolute right-0 bottom-0 left-0 bg-slate-300 dark:bg-gray-700 md:hidden md:invisible">
       <div className="w-full h-full text-justify flex flex-row items-center p-4 text-slate-900 dark:text-gray-50">
         <Item className="justify-start">
           <Popover

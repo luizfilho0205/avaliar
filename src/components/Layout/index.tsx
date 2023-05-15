@@ -1,7 +1,8 @@
 import React from 'react'
 import type { ReactNode } from 'react'
-import GhostButton from '../GhostButton'
+import TopAppBar from '../TopAppBar'
 import BottonNavigation from '../BottonNavigation'
+import GhostButton from '../GhostButton'
 
 interface LayoutProps {
   children: ReactNode
@@ -16,8 +17,9 @@ const Layout: React.FC<LayoutProps> = ({ children }: LayoutProps) => {
 
   return (
     <div className="w-[100vw] h-[100vh] text-slate-900 bg-slate-50 dark:text-gray-50 dark:bg-gray-900">
-      {children}
+      <TopAppBar />
       <div className="flex flex-col gap-8">
+        {children}
         <GhostButton onClick={() => changeTheme('dark')}>Dark</GhostButton>
         <GhostButton onClick={() => changeTheme('light')}>Light</GhostButton>
       </div>

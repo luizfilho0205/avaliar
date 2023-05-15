@@ -12,7 +12,7 @@ const GhostButton: React.FC<GhostButtonProps> = ({
   return (
     <button
       type="button"
-      className="w-fit text-slate-900 dark:color dark:text-gray-50 bg-transparent cursor-pointer"
+      className="w-fit h-fit rounded-lg p-1 text-slate-900 dark:color dark:text-gray-50 bg-transparent cursor-pointer hover:shadow hover:shadow-slate-500 hover:dark:shadow-gray-500"
       {...rest}
     >
       {children}

@@ -1,38 +1,109 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Avaliar - Plataforma de Avaliação de Docentes
 
-## Getting Started
+Este é um projeto Next.JS escrito em TypeScript que utiliza o Tailwind CSS para estilização. O objetivo da plataforma é permitir que diretores e coordenadores pedagógicos criem matrizes de observação de aula personalizadas, com indicadores e escalas próprias, para avaliação de docentes. A plataforma também permite o envio de feedback diretamente ao docente avaliado.
 
-First, run the development server:
+## Funcionalidades
+
+- Cadastro de usuários como Diretor(a) ou Coordenador(a) Pedagógico(a)
+- Cadastro de docentes
+- Criação de matrizes de observação de aula personalizadas
+- Realização de observações de aula com base nas matrizes criadas
+- Envio de feedback diretamente ao docente avaliado
+- Visualização de histórico de observações e feedbacks enviados
+
+## Instalação e Execução
+
+### Pré-requisitos
+
+- Node.js (versão 14 ou superior)
+- npm ou yarn
+
+### Passos
+
+1. Clone o repositório para o seu computador:
+
+```bash
+git clone https://github.com/luizfilho0205/avaliar.git
+```
+
+2. Instale as dependências:
+
+```bash
+cd avaliar
+npm install
+# ou
+yarn install
+```
+
+3. Inicia a aplicação:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará rodando em http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Contribuindo
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir uma issue ou um pull request com sugestões ou correções.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Licença
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-## Learn More
+# Avaliar - Teacher Evaluation Platform
 
-To learn more about Next.js, take a look at the following resources:
+This is a Next.JS project written in TypeScript that uses Tailwind CSS for styling. The platform's purpose is to allow school directors and pedagogical coordinators to create custom classroom observation matrices with their own indicators and scales for evaluating teachers. The platform also allows sending feedback directly to the evaluated teacher.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Registration of users as School Directors or Pedagogical Coordinators
+- Registration of teachers
+- Creation of custom classroom observation matrices
+- Performance of classroom observations based on created matrices
+- Sending feedback directly to the evaluated teacher
+- Visualization of the history of observations and sent feedbacks
 
-## Deploy on Vercel
+## Installation and Execution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Node.js (version 14 or higher)
+npm or yarn
+
+### Steps
+
+1. Clone the repository to your computer:
+
+```bash
+git clone https://github.com/luizfilho0205/avaliar.git
+```
+
+2. Install the dependencies:
+
+```bash
+cd avaliar
+npm install
+# ou
+yarn install
+```
+
+3. Start the application:
+
+```bash
+npm run dev
+# ou
+yarn dev
+```
+
+The application will be running at http://localhost:3000.
+
+## Contributing
+
+Contributions are always welcome! Feel free to open an issue or a pull request with suggestions or corrections.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.

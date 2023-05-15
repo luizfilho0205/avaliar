@@ -14,7 +14,7 @@ const SurfaceButton: React.FC<SurfaceButtonProps> = ({
   return (
     <button
       type="button"
-      className={`border-none cursor-pointer rounded-lg bg-slate-50 shadow dark:bg-gray-900 dark:shadow-gray-500 ${
+      className={`border-none cursor-pointer rounded-lg bg-slate-50 shadow dark:bg-gray-900 ${
         className ?? ''
       }`}
       {...rest}
